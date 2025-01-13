@@ -6,7 +6,7 @@ This repository contains the dataset and code for a skin lesion classification r
 
 The dataset used in this project can be downloaded from the following link:
 
-[Download Dataset](<insert-download-link-here>)
+[Download Dataset](https://drive.google.com/file/d/1tUFKzhImLdORGLA8Q_hneFQZHM3C41zx/view?usp=drive_link)
 
 ## Project Structure
 
