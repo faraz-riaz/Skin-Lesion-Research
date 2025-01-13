@@ -10,7 +10,7 @@ The dataset used in this project can be downloaded from the following link:
 
 ## Project Structure
 
-- `data/`: Contains the dataset files.
+- `images/`: Contains the dataset files.
 - `notebooks/`: Jupyter notebooks for data exploration and model development.
 - `src/`: Source code for data preprocessing, model training, and evaluation.
 - `results/`: Results and evaluation metrics of the models.
@@ -21,7 +21,7 @@ The dataset used in this project can be downloaded from the following link:
     ```bash
     git clone <repository-url>
     ```
-2. Download the dataset and place it in the `data/` directory.
+2. Download the dataset and place it in the `images/` directory.
 3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
