@@ -6,6 +6,8 @@ import torch.optim as optim
 from tqdm import tqdm
 from VGG_definitions import VGG16WithAttention, ImageDataset, transform, BATCH_SIZE
 import pandas as pd
+import warnings
+warnings.filterwarnings("ignore")
 
 
 # Set device and create results directory
@@ -14,8 +16,8 @@ print(f"Using device: {device}")
 os.makedirs('../results', exist_ok=True)
 
 # Create dataset and dataloader
-train_df = pd.read_csv(r'..\images\metadata\train_metadata_updated.csv')
-val_df = pd.read_csv(r'..\images\metadata\val_metadata_updated.csv')
+train_df = pd.read_csv(r'../images/metadata/train_metadata_updated.csv')
+val_df = pd.read_csv(r'../images/metadata/val_metadata_updated.csv')
 
 train_dataset = ImageDataset(dataframe=train_df, directory='../images/train_images', transform=transform)
 train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, pin_memory=True)
