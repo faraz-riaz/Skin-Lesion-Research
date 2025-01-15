@@ -28,7 +28,7 @@ criterion = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Training loop
-num_epochs = 10  # Increased number of epochs for better training
+num_epochs = 2  # Increased number of epochs for better training
 best_loss = float('inf')
 
 for epoch in range(num_epochs):

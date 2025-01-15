@@ -4,3 +4,5 @@
 /images/valb_images
 images.rar
 /venv
+/results/*
+!/results/place_saved_model_weights_here.txt
