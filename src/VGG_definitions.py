@@ -71,7 +71,7 @@ class VGG16WithAttention(nn.Module):
         vgg16 = models.vgg16(pretrained=True)
         
         self.features_1 = nn.Sequential(*list(vgg16.features.children())[:24])
-        self.attention = SoftAttention(in_channels=512, multiheads=1, aggregate=True)
+        self.attention = SoftAttention(in_channels=512, multiheads=1, aggregate=False)
         self.features_2 = nn.Sequential(*list(vgg16.features.children())[24:])
         self.avgpool = vgg16.avgpool
         
